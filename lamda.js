@@ -14,8 +14,8 @@ const HELP_REPROMPT = 'How can I help you with? you can ask me about Agenda, Pre
 const STOP_MESSAGE = 'Thank you using voice activated SUG Chennai Meetup Skill, Goodbye!';
 const ERROR_MESSAGE = 'Something went wong, please try again after some time !!';
 
-const SitecoreServiceURL = "https://sitecore9208312019-437910-single.azurewebsites.net/sitecore/api/ssc/aggregate/content/";
-const ODATAAPIKey = "60BCF112-CAE9-48C3-8269-CBA1E7DDDF8A";
+const SitecoreServiceURL = "https://*****-single.azurewebsites.net/sitecore/api/ssc/aggregate/content/";
+const ODATAAPIKey = "***********";
 
 function buildHandelers(event) {
 
@@ -38,8 +38,8 @@ function buildHandelers(event) {
        
         'LaunchRequest': function() {
             var launchImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/Intro.jpg',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/Intro.jpg'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/Intro.jpg',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/Intro.jpg'
             };
 
             if (ISSERVICEUP) {
@@ -70,8 +70,8 @@ function buildHandelers(event) {
         },
         'AgendaIntent': function() {
             var agendaImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/agenda.jpg',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/agenda.jpg'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/agenda.jpg',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/agenda.jpg'
             };
             if (ISSERVICEUP) {
 
@@ -111,8 +111,8 @@ function buildHandelers(event) {
         },
         'SponsorsIntent': function() {
             var sponserImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/AMEEX%2BSITECORE.png',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/AMEEX%2BSITECORE.png'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/AMEEX%2BSITECORE.png',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/AMEEX%2BSITECORE.png'
             };
             if (ISSERVICEUP) {
 
@@ -153,8 +153,8 @@ function buildHandelers(event) {
         },
         'FindSessionIntent': function() {
             var sessionImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/sess.jpg',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/sess.jpg'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/sess.jpg',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/sess.jpg'
             };
 
             if (this.event.request.intent.slots != null && this.event.request.intent.slots != "" && this.event.request.intent.slots.presenter != null && this.event.request.intent.slots.presenter != "" && this.event.request.intent.slots.presenter.value != "") {
@@ -174,8 +174,8 @@ function buildHandelers(event) {
         'PresentersIntent': function() {
 
             var presentersImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/presenter.jpg',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/presenter.jpg'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/presenter.jpg',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/presenter.jpg'
             };
             if (ISSERVICEUP) {
                 var responseString = '';
@@ -213,8 +213,8 @@ function buildHandelers(event) {
         },
         'VenueIntent': function() {
             var locationImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/location.jpg',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/location.jpg'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/location.jpg',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/location.jpg'
             };
             if (ISSERVICEUP) {
 
@@ -246,8 +246,8 @@ function buildHandelers(event) {
         },
         'ParticipantsIntent': function() {
             var participantsImage = {
-                smallImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/Participants.jpg',
-                largeImageUrl: 'https://alexa-sugchennai-meetup.s3-us-west-2.amazonaws.com/Participants.jpg'
+                smallImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/Participants.jpg',
+                largeImageUrl: 'https://*****.s3-us-west-2.amazonaws.com/Participants.jpg'
             };
             if (ISSERVICEUP) {
 
