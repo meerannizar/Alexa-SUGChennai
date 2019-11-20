@@ -1,0 +1,104 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sug chennai meetup",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ScheduledIntent",
+                    "slots": [],
+                    "samples": [
+                        "When the meetup planned"
+                    ]
+                },
+                {
+                    "name": "SponsorsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Who all are the sponsors"
+                    ]
+                },
+                {
+                    "name": "AgendaIntent",
+                    "slots": [],
+                    "samples": [
+                        "how many sessions are there today",
+                        "list sessions",
+                        "list of all the sessions",
+                        "What is the Agenda"
+                    ]
+                },
+                {
+                    "name": "PresentersIntent",
+                    "slots": [],
+                    "samples": [
+                        "Who all are presenting today"
+                    ]
+                },
+                {
+                    "name": "VenueIntent",
+                    "slots": [],
+                    "samples": [
+                        "Venue details pls"
+                    ]
+                },
+                {
+                    "name": "FindSessionIntent",
+                    "slots": [
+                        {
+                            "name": "presenter",
+                            "type": "ListofPresenters"
+                        }
+                    ],
+                    "samples": [
+                        "What session will be taken by {presenter}",
+                        "What session {presenter} is taking today"
+                    ]
+                },
+                {
+                    "name": "ParticipantsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Total Participants count today"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ListofPresenters",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Kishore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nizar"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
